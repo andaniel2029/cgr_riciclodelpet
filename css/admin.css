@@ -1,0 +1,357 @@
+/* 
+    Document   : admin
+    Created on : 3-giu-2013, 10.22.20
+    Author     : Diego Bellati diego@ranaridens.com
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+/*table, caption, tbody, tfoot, thead, tr, th, td,*/
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+/*
+PARTE PERSONALIZZATA
+
+*/
+body {
+    font-family: "Arial",sans-serif;
+    font-size: 16px;
+    background-color: whitesmoke;
+    color: black;
+}
+fieldset{
+    border: 1px solid gray;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+.centrato{
+    margin: 0 auto;
+
+}
+.bordato{
+    border: 1px solid gray;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+
+.contenuto{
+    width: 960px;
+}
+/*view-menu*/
+
+#menu{
+text-align: center;
+
+
+}
+#menu a{
+    text-decoration: none;
+    color: blue;  
+    border: 1px solid gray;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    text-align: center;
+}
+
+#menu ul li{
+
+    /*display: inline;*/
+
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#benchmark{
+    text-align: center;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+}
+#get_categoria,#get_prodotti,#elenco_foto{
+    width: 100%;
+    color:red;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing:  10px;
+
+}
+
+#elenco_foto td{
+    background-color: lightyellow;
+}
+
+fieldset{
+    margin: 10px;
+    padding: 20px;
+}
+legend{
+    color: green;
+}
+thead{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.butt_anteprima_descrizione{
+    color: green;
+    cursor: pointer;
+}
+.show_hide{
+  
+   
+}
+
+/*form_cliente*/
+.form_cli_titolo{
+    margin: 0 auto;
+    width: 675px;
+    height: 36px;
+    background-color: red;
+    position: relative;
+}
+#cl1_dx{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 277px;
+    height: 36px;
+    background-color: green;
+}
+#cl1_sx{
+    background-color: yellow;
+    width: 315px;
+    height: 36px;
+        position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+
+.form_cli_categoria{
+    margin: 0 auto;
+    width: 675px;
+    height: 36px;
+    background-color: rosybrown;
+    position: relative;
+}
+#cl1_cat_dx{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 277px;
+    height: 36px;
+    background-color: blue;
+}
+#cl1_cat_sx{
+    background-color: violet;
+    width: 315px;
+
+        position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.form_cli_form{
+    margin: 0 auto;
+    width: 675px;
+    height: 780px;
+    background-color: navajowhite;
+    position: relative;
+}
+#cl1_form_dx{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 277px;
+   
+    background-color: yellowgreen;
+}
+#cl1_form_sx{
+    background-color: lightcoral;
+    width: 315px;
+    
+        position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.testo_form_basso{
+    width: 315px;
+  
+    right: 0px;
+    bottom: 100px;
+}
+.accetto_form{
+/*    position: absolute;
+    bottom: 0px;*/
+    width: 675px;
+    text-align: center;
+}
+#consenso_tratt_dati{
+  
+
+    position: absolute;
+    bottom: 80px;
+    right: 0px;
+}
+
+
+.clienti_v{
+    width: 700px;
+    height: 900px;
+    background-color: white;
+    
+}
+
+
+/*//form tabella inserimento clienti/fornitori*/
+
+
+#tabella_1,#tabella_2 {
+  width: 675px;
+  
+}
+#registra_view_testo_alto{
+    position: absolute;
+    top: 36px;
+    width: 655px;
+    height: 80px;
+    right: 36px;
+    background-color: #00ACC8;
+    padding: 10px;
+    color: white;
+    font-size: .9em;
+}
+#registra_view table{
+    border-collapse: separate;
+    border-spacing: 20px;
+    text-align: left;
+}
+#registra_view{
+    height: 1150px;
+}
+
+.background_blue{
+    background-color: #00ACC8;
+    color: white;
+        font-weight: bolder;
+    text-transform: uppercase;
+}
+.color_blue{
+    color:#00ACC8;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+#form_tab{
+    position: relative;
+    margin: 0 auto;
+    width: 675px;
+    
+}
+
+
+
+.meta_tabella{
+    width: 50%;
+}
+
+#clienti_v table{
+    border-collapse: collapse;
+    border-spacing: 0px;
+  
+}
+#clienti_v table td{
+    padding: 5px;
+    /*border-collapse: separate;*/
+    /*border-spacing: 10px;*/
+    /*padding: 10px;*/
+}
+#clienti_v table th{
+    padding: 5px;
+    /*border-collapse: separate;*/
+    /*border-spacing: 10px;*/
+    /*padding: 10px;*/
+}
+#elenco_offerte_fornitori{
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+    background-color: lightcyan;
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+#get_offerte_per_clienti{
+    /*display: none;*/
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    display: none;
+    background-color: lightgoldenrodyellow;
+    padding: 5px;
+    border: 1px solid red;
+}
+#offerte_modifica_view{
+    text-align: center;
+}
+#offerte_modifica_view label {
+    margin-right: 40px;
+    text-align: left;
+}
