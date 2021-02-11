@@ -109,7 +109,7 @@ class Welcome extends CI_Controller {
         }
         $sql = "SELECT *, offerte_per_cliente.id AS CLI_ID FROM offerte_per_cliente JOIN
             foto_offerte_clienti
-            ON offerte_per_cliente.id = foto_offerte_clienti.offerta_id WHERE offerte_per_cliente.attivo = 1 AND scadenza > ?  ORDER BY timestamp DESC LIMIT 10";
+            ON offerte_per_cliente.id = foto_offerte_clienti.offerta_id WHERE offerte_per_cliente.attivo = 1 ORDER BY timestamp DESC LIMIT 10";
         $adesso = time();
         $ris = $this->db->query($sql, array($adesso))->result_array();
 
