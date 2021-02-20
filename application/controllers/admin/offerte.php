@@ -870,7 +870,7 @@ class Offerte extends CI_Controller {
         $testo_ok .='<li>Quantità: ' . $testo['quantita'] . '</li>';
         $testo_ok .='<li>Prezzo: ' . $testo['prezzo'] . '</li>';
         $testo_ok .='<li>Descrizione: ' . $testo['descrizione'] . '</li>';
-//        $testo_ok .='<li>Email: ' . $testo['email'] . '</li>';
+        // $testo_ok .='<li>Email: ' . $testo['email'] . '</li>';
         $testo_ok .='<li>Ultima modifica: ' . $testo['timestamp'] . '</li>';
         $testo_ok .='<li>inserimento' . date('d-m-Y', $testo['inserimento']) . '</li>';
         $testo_ok .='<li>DATI UTENTE</li>';

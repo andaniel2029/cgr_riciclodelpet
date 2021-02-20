@@ -62,12 +62,12 @@ class Login_clienti extends CI_Controller {
                     $this->load->library('email');
 
             $config = Array(
-//                'protocol' => 'smtp',
-//                'smtp_host' => 'smtps.cgr-riciclodelpet.it',
-//                'smtp_port' => 465,
-//                'smtp_crypto' => 'ssl',
-//                'smtp_user' => 'noreply@cgr-riciclodelpet.it',
-//                'smtp_pass' => '[9yw1wMA',
+               'protocol' => 'smtp',
+               'smtp_host' => 'smtps.cgr-riciclodelpet.it',
+               'smtp_port' => 465,
+               'smtp_crypto' => 'ssl',
+               'smtp_user' => 'noreply@cgr-riciclodelpet.it',
+               'smtp_pass' => '[9yw1wMA',
                 'mailtype' => 'html',
                 'charset' => 'iso-8859-1'
             );
