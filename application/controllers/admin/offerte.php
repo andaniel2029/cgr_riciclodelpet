@@ -192,14 +192,16 @@ class Offerte extends CI_Controller {
                 }
 
 
-//tab relazionale che lega offerta a cliente
+                // tab relazionale che lega offerta a cliente
                 $sql = "INSERT INTO off_cli (cliente_id,offerte_per_cliente_id) VALUES (?,?)";
                 $this->db->query($sql, array($value, $last_id));
             }
-//
             $sql = "SELECT * FROM foto WHERE inserzione_id = ?";
             $r = $this->db->query($sql, array($id_offerta_originale))->result_array();
-            mkdir('./foto_offerte/' . $last_id);
+            // mkdir('./foto_offerte/' . $last_id);
+            if (!file_exists('./foto_offerte/' . $last_id)) {
+                mkdir('./foto_offerte/' . $last_id, 0700);
+            }
             foreach ($r as $value) {
                 $sql = "INSERT INTO foto_offerte_clienti (offerta_id,foto,thumb) VALUES (?,?,?)";
                 $this->db->query($sql, array($last_id, $value['url'], $value['thumb']));
@@ -210,11 +212,14 @@ class Offerte extends CI_Controller {
                 }
             }
 
-//            $foto = './uploads_foto/' . $value['foto'];
-//files
+            // $foto = './uploads_foto/' . $value['foto'];
+            //files
             $sql = "SELECT * FROM file_offerta WHERE inserzione_id = ?";
             $r = $this->db->query($sql, array($id_offerta_originale))->result_array();
-            mkdir('./file_offerte/' . $last_id);
+            // mkdir('./file_offerte/' . $last_id);
+            if (!file_exists('./file_offerte/' . $last_id)) {
+                mkdir('./file_offerte/' . $last_id, 0700);
+            }
             foreach ($r as $value) {
                 $sql = "INSERT INTO file_offerte_clienti (offerta_id,url,nome) VALUES (?,?,?)";
 
